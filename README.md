@@ -2,7 +2,7 @@
 There are three way to create the folder structure for Project templates.
 
 # Steps for Cookiecutter
-#1. Create virtual env: setup.sh
+1. Create virtual env: setup.sh
 ```
 python3 -m pip install virtualenv
 echo "creating a virtual envirnment."
@@ -12,19 +12,21 @@ echo "activating virual environment"
 echo "virtrual environment activated"
 
 ```
+2. Activate vitual environment
 ```
 chmod +x setup.sh
 ./setup.sh
 source virtualenv/bin/activate
 ```
-#2. install cookiecutter
+3. install cookiecutter
 ```
 pip install cookiecutter
 ```
-#3. create folder for datascience project
+4. create folder for datascience project
 ```
 cookiecutter https://github.com/drivendata/cookiecutter-data-science
 ```
+5. Setting some parameters
 ```
 project_name [project_name]: cookiecutter_project
 repo_name [cookiecutter_project]: cookiecutter_repo
